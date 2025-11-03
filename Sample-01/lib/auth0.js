@@ -9,6 +9,7 @@ export const auth0 = new Auth0Client({
   // clientSecret: process.env.AUTH0_CLIENT_SECRET,
   // appBaseUrl: process.env.APP_BASE_URL,
   // secret: process.env.AUTH0_SECRET,
+  enableAccessTokenEndpoint: true,
   authorizationParameters: {
     // In v4, the AUTH0_SCOPE and AUTH0_AUDIENCE environment variables are no longer automatically picked up by the SDK.
     // Instead, we need to provide the values explicitly.
